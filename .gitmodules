@@ -1,0 +1,34 @@
+
+[submodule "Submodules/MWFeedParser"]
+	path = Submodules/MWFeedParser
+	url = git@github.com:ChatSecure/MWFeedParser.git
+[submodule "Submodules/OTRKit"]
+	path = Submodules/OTRKit
+	url = git@github.com:ChatSecure/OTRKit.git
+[submodule "Submodules/LibOrange"]
+	path = Submodules/LibOrange
+	url = git@github.com:ChatSecure/LibOrange.git
+[submodule "Submodules/XMPPFramework"]
+	path = Submodules/XMPPFramework
+	url = git@github.com:ChatSecure/XMPPFramework.git
+[submodule "Submodules/UserVoice"]
+	path = Submodules/UserVoice
+	url = git@github.com:ChatSecure/uservoice-iphone-sdk.git
+[submodule "Submodules/encrypted-core-data"]
+	path = Submodules/encrypted-core-data
+	url = git@github.com:ChatSecure/encrypted-core-data.git
+[submodule "Submodules/TTTAttributedLabel"]
+	path = Submodules/TTTAttributedLabel
+	url = git@github.com:ChatSecure/TTTAttributedLabel.git
+[submodule "Submodules/googleChromeOpenInChrome"]
+	path = Submodules/googleChromeOpenInChrome
+	url = git@github.com:ChatSecure/OpenInChrome.git
+[submodule "Submodules/iOS-Screenshot-Automater"]
+	path = Submodules/iOS-Screenshot-Automater
+	url = git@github.com:ChatSecure/iOS-Screenshot-Automator.git
+[submodule "Submodules/facebook-ios-sdk"]
+	path = Submodules/facebook-ios-sdk
+	url = https://github.com/facebook/facebook-ios-sdk.git
+[submodule "Submodules/ChatSecure-Metadata"]
+	path = Submodules/ChatSecure-Metadata
+	url = git@github.com:ChatSecure/ChatSecure-Metadata.git

@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+minimum_perc = 1
+
+[chatterbox.strings]
+source_lang = en_US
+source_file = en.lproj/Localizable.strings
+file_filter = <lang>.lproj/Localizable.strings
