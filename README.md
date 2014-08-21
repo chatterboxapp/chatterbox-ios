@@ -1,73 +1,14 @@
-ChatSecure
+Chatterbox
 =========
 
-ChatSecure is a free and open source instant messaging client for [iOS](https://itunes.apple.com/us/app/chatsecure/id464200063) and [Android](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im&hl=en) that integrates encrypted [OTR](https://en.wikipedia.org/wiki/Off-the-Record_Messaging) ("Off the Record") messaging support from the [libotr](https://otr.cypherpunks.ca/) library and the [XMPPFramework](https://github.com/robbiehanson/XMPPFramework/) to handle Jabber/GTalk (XMPP).
+Chatterbox is a free and open source instant messaging client for jailbroken iOS. It is adapted from the open source project ChatSecure (https://chatsecure.org) and aims to bring support for features not allowed in sandboxed environments seen outside of jailbroken iOS. It integrates encrypted OTR (https://en.wikipedia.org/wiki/Off-the-Record_Messaging) known as "Off the Record" messaging with support from the libotr (https://otr.cypherpunks.ca/) library and the XMPPFramework (https://github.com/robbiehanson/XMPPFramework/) to handle Jabber/GTalk (XMPP).
 
 
 Cost
 =========
 
-This project is **100% free** because it is important that all people around the world have unrestricted access to privacy tools.
-However, developing and supporting this project is hard work and costs real money. Please help support the development of this project! We now also accept Bitcoin via Coinbase! :)
+This project is absolutely free. Perhaps consider a donation to the ChatSecure project this is adapted from to continue their great development.
 
-[![bitcoin](https://chatsecure.org/images/bitcoin_donate.png)](https://coinbase.com/checkouts/1cf35f00d722205726f50b940786c413) [![donation](https://chatsecure.org/images/paypal_donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XRBHJ9AX5VWNA) 
-
-
-Localization
-=========
-
-![transifex localization](https://www.transifex.com/projects/p/chatsecure/resource/strings/chart/image_png)
-
-If you would like to contribute/improve a translation:
-
- 1. Visit our [Transifex project page](https://www.transifex.net/projects/p/chatsecure/) and make an account if you don't have one already.
- 2. Go to the resources subsites [AppStore.strings](https://www.transifex.net/projects/p/chatsecure/resource/appstorestrings/) & [Localizable.strings](https://www.transifex.net/projects/p/chatsecure/resource/strings/) to add a new language or improve an existing translation. 
- 3. [Open an issue on Github](https://github.com/chrisballinger/Off-the-Record-iOS/issues) notifying us of your translation.
-
-
-
-Compatibility
-=========
-
-**Bold** indicates it has been tested and works properly.
-
-Native
-------
-* **[Adium](https://adium.im/) (Mac OS X) - OTR works over both XMPP and Oscar.**
-* Jitsi (Cross-platform)
-
-Plug-in
-------
-* [Pidgin](https://pidgin.im/) (cross-platform), with [pidgin-otr](https://otr.cypherpunks.ca/index.php#downloads) plugin.
-
-Phone apps
-------
-* **[ChatSecure Android](https://guardianproject.info/apps/chatsecure/) (formerly known as Gibberbot)**, a free and open source Android application produced by The Guardian Project, provides OTR protocol compatible over XMPP chat.
-* [BEEM](http://beem-project.com/projects/beem) - Android XMPP client (compatibility unknown)
-
-[Full List](https://en.wikipedia.org/wiki/Off-the-Record_Messaging#Client_support)
-
-Build Instructions
-========
-Install [mogenerator](http://rentzsch.github.io/mogenerator/) in order to regenerate the Core Data model files. You'll also need [Cocoapods](http://cocoapods.org) for some of our dependencies.
-    
-    $ brew install mogenerator
-    $ gem install cocoapods
-    
-Download the source code and **don't forget** to pull down all of the submodules as well.
-
-    $ git clone git@github.com:chrisballinger/Off-the-Record-iOS.git
-    $ cd Off-the-Record-iOS/
-    $ git submodule update --init --recursive
-    $ pod
-    
-Make your own version of environment-specific data. Make `OTRSecrets.m` file with blank API keys, and set your provisioning profile ID in `OTR_Codesigning.xcconfig`. To find the provisioning profile ID, go to Project Settings -> Build Settings -> Code Signing -> Select Provisiong Profile -> Select Other -> Copy Profile's UUID into `OTR_Codesigning.xcconfig`.
-
-    $ cp "Off the Record/OTRSecrets-Template.m" "Off the Record/OTRSecrets.m"
-    $ cp "Off the Record/configurations/OTR_Codesigning.xcconfig.sample" "Off the Record/configurations/OTR_Codesigning.xcconfig"
-
-    
-Open `Off the Record.xcworkspace` in Xcode and build. Note that you don't open the .xcodeproj anymore because we use Cocoapods now.
 
 License
 =========
@@ -91,16 +32,6 @@ License
 
 If you would like to relicense this code to distribute it on the App Store, 
 please contact me at [chris@chatsecure.org](mailto:chris@chatsecure.org).
-
-Contributing
-------------
-
-Thank you for your interest in contributing to ChatSecure! To avoid potential legal headaches and to allow distribution on Apple's App Store please sign our CLA (Contributors License Agreement). For contributing translations, please check out our [Transifex](https://www.transifex.com/projects/p/chatsecure/) page.
-
-1. Sign the CLA ([odt](https://github.com/chrisballinger/Off-the-Record-iOS/raw/master/media/contributing/CLA.odt), [pdf](https://github.com/chrisballinger/Off-the-Record-iOS/raw/master/media/contributing/CLA.pdf)) and email it to [chris@chatsecure.org](mailto:chris@chatsecure.org).
-2. [Fork](https://github.com/chrisballinger/Off-the-Record-iOS/fork) the project and (preferably) work in a feature branch.
-3. Open a [pull request](https://github.com/chrisballinger/off-the-record-ios/pulls) on GitHub.
-4. Thank you!
 
 
 Third-party Libraries
@@ -129,7 +60,7 @@ terms of a separate license:
 * [mogenerator](https://github.com/rentzsch/mogenerator) - creates class files for core data model
 * [DAKeyboardControl](https://github.com/danielamitay/DAKeyboardControl) - support for swiping down keyboard in chat view
 
-Acknowledgements
+ChatSecure's Acknowledgements
 =========
 
 Thank you to everyone who helped this project become a reality! This project is also supported by the fine folks from [The Guardian Project](https://guardianproject.info) and [OpenITP](https://openitp.org).
